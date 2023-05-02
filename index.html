@@ -8,69 +8,113 @@
     <style>
         .Male-name{
             font-weight:bold;
+            margin-left: 100;
         }
-        .Female-name{
-            font-size: 30px;
-        }
+        
         .image{
-            height:10p
+            height:200px;
+            width:200px;
+            border-radius: 50%;
+            border-style: solid;
+            border-color: black;
+        }
+        
+        .n-edit{
+            font-weight: bold;
+        }
+        .footer-edit{
+            background-color: #124fd2; color: #F1F6F9; display: flex; justify-content: flex-start; align-items: center; gap: 10px; flex-direction: row;
+        }        
+        .nn-edit{
+            display:inline-block;
+            margin-right: 20px;
+        }
+        .mm-edit{
+            display:inline-block;
+            margin-left: 100px;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex-grow: 1;
+            background-color: rgb(230, 227, 224);
+        }
+        header {
+            background-image: url('hq.jpg'); 
+            background-size: cover;
+            background-position: center;
         }
     </style>
     
 </head>
 <body>
     <header>
-        <img class="image" src="B.jpg" width="15%" height="auto">
+        <img class="image" src="B.jpg" width="15%" height="auto">        
     </header>
-        
-    <p class="Male-name">
-        Berhane Micheal
-    </p>
-    <ul>
-        <li>
-            <a href="#">
-                Lab01 - Home Page
-            </a> 
-        
-        </li>
-        <li>
-            <a href="#">
-                Lab02 - About me
-            </a>             
-        </li>
-        <li>
-            <a href="#">
-                Lab03 - Recipe
-            </a> 
+    <main>
+        <p class="Male-name">
+            Berhane Micheal
+        </p>
+        <ul>
+            <li>
+                <a href="#">
+                    Lab01 - Home Page
+                </a> 
             
-        </li>
-        <li>
-            <a href="#">
-                Lab04 - Movie Review
-            </a> 
-        </li>
-        <li>
-            <a href="#">
-                Lab05 - MP3 Library
-            </a> 
+            </li>
+            <li>
+                <a href="#">
+                    Lab02 - About me
+                </a>             
+            </li>
+            <li>
+                <a href="#">
+                    Lab03 - Recipe
+                </a> 
             
-        </li>
-        <li>
-            <a href="#">
-                Lab06 - Movie Review PHP
-            </a>             
-        </li>
-    </ul>
-    ><footer>
-        
+            </li>
+            <li>
+                <a href="#">
+                    Lab04 - Movie Review
+                </a> 
+            </li>
+            <li>
+                <a href="#">
+                    Lab05 - MP3 Library
+                </a> 
+            
+            </li>
+            <li>
+                <a href="#">
+                    Lab06 - Movie Review PHP
+                </a>             
+            </li>
+        </ul>
+    </main>
+    <footer class="footer-edit">
+        <div class="nn-edit">
+            <p class="n-edit">
+                © Berhane Micheal
+            </p>
+            <p>
+                Mahrashi University of Management
+            </p>
+            <p>
+                Address: 1000 N 4 th St., Fairfield, Iowa, 52557
+            </p>
+            <p>
+                Email: htmai@miu.edu
+            </p>
+        </div>
+        <div class="mm-edit">
+            <a href="http://validator.w3.org/check/referer">
+                <img src="http://mumstudents.org/cs472/2013-09/images/w3c-html.png" alt="validate">
+            </a>
+        </div>
     </footer>
+   
 </body>
 </html>
-    
-
-
-
-
-
-
-
