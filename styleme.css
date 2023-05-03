@@ -1,0 +1,89 @@
+body{
+    background-color: rgba(89,86,71,1.000);
+    color: white;
+}
+.First-para::first-letter{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    color: red;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.info{
+    color: yellow;
+}
+.info-second{
+    margin-left: 50px;
+}
+h1, h2, h3, h4, h5{
+    color: rgb(170, 170, 251);
+}
+h1{
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2, h3, h4, h5{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.behaviour{
+    color: yellow;
+}       
+.IMDB{
+    color: rgb(243, 5, 5);
+}
+.whole{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px; 
+    margin-right: 0px; 
+    width: 500px;  
+}
+.Happy-class{
+    display: inline-block;
+    width: 200px;
+}
+.Sad-class{
+    display: inline-block;
+    width: 200px
+}
+img{   
+    width:150px ;
+    height:190px;    
+}
+.footer-edit{
+    background-color: #303745; 
+    color: #F1F6F9; 
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 10px; 
+    flex-direction: row;
+}        
+
+.t1{
+    height: auto;
+} 
+.t2{
+    height: auto;
+}      
+
+     
+.jh{
+    text-align: left;
+    height: 10px;
+    
+    margin-left: 10px;
+}
+.sk{     
+    text-align: left;
+    
+    margin-left: 350px;
+
+   
+}
