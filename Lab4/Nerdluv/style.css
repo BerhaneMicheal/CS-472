@@ -17,7 +17,8 @@ header p {
     font-size: 1rem;
 }
 span{
-    color: #ffa1a6;
+    color: #c2c4ff;
+    font-weight: 100px;
 }
 
 .container{
@@ -34,9 +35,11 @@ span{
 
 .main fieldset{
     padding: 0.6rem;
-    background-color: #e0e1ff;
+    background-color: #c0c2fa;
     border-radius: 1rem;
-    border: 1px solid black;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
 }
 
 
@@ -48,7 +51,7 @@ legend{
     box-shadow: 2px 2px gray;
 }
 
-.row{
+.informations{
     display: flex;
     justify-content: space-between;
     margin: 0.5rem;
