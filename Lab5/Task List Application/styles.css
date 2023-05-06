@@ -27,7 +27,13 @@ h1{
 }
 .both-columns{
     display: flex;  
-    justify-content: space-around;  
+    justify-content: space-around; 
+    height: 163px; 
+}
+.column-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .task-list{
     margin-top:0px;
@@ -44,11 +50,15 @@ h1{
 #clearTasksButton{
     margin-left: 0px;
 }
-.column-one{
-    display: flex;
-    flex-direction: column;
-    justify-content: 
+.addtask-button, .cleartask-button{
+   
 }
+.button-one, .button-two{
+    width: 243px;
+    height: 40px;
+    margin-top: 10px;
+}
+
 
 input[type="text"], button {
     padding: 10px;
