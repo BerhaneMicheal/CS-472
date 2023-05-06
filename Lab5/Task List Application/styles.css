@@ -27,21 +27,22 @@ h1{
 .task-list{
     margin-top:0px;
     margin-bottom: 0px;
-    padding-top: 0px;
 }
-.addtask-button{
+#taskList {
+    width: 100%;
+    height: 135px;
+}
+
+#addTaskButton{
     margin-left:0px
 }
-.cleartask-button{
+#clearTasksButton{
     margin-left: 0px;
 }
 .column-one{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-}
-.column-two{
-    
 }
 
 input[type="text"], button {
