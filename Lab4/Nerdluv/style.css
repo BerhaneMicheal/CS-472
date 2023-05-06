@@ -9,14 +9,14 @@ header {
     margin-bottom: 1rem;
 }
 
-header h1 {
+h1 {
     font-size: 2rem;
 }
 
 header p {
     font-size: 1rem;
 }
-span{
+header span{
     color: #c2c4ff;
     font-weight: 100px;
 }
@@ -33,16 +33,13 @@ span{
     width: 50%;
 }
 
-.main fieldset{
+fieldset{
     padding: 0.6rem;
     background-color: #c0c2fa;
-    border-radius: 1rem;
-    border: 1px;
+    border-radius: 1rem;   
     border-style: solid;
     border-color: black;
 }
-
-
 
 legend{
     border: 1px solid black;
@@ -70,7 +67,6 @@ legend{
 
 .input-container{
     display: flex;
-    justify-content: flex-start;
     gap: 0.5rem;
     width: 70%;
 }
