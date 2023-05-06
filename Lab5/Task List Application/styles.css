@@ -3,7 +3,8 @@ body {
 }
 
 h1{
-    color: blue;
+    color: blue; 
+    margin-left:38px;   
 }
 
 .container {
@@ -19,6 +20,10 @@ h1{
     border: 100px;    
     border-color: rgb(231, 20, 20);
     
+}
+.whole{
+    display: flex;
+    flex-direction: column;
 }
 .both-columns{
     display: flex;  
@@ -42,7 +47,7 @@ h1{
 .column-one{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: 
 }
 
 input[type="text"], button {
