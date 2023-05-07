@@ -1,5 +1,5 @@
 body {
-    background-image: url('silverware.jpg');
+    background-image: url('image/silverware.jpg');
     background-repeat: repeat;
     background-attachment: fixed;
     background-color: white;
@@ -66,7 +66,7 @@ pre {
 }
 
 ul{
-    list-style-image: url('pie_icon.gif');
+    list-style-image: url('image/pie_icon.gif');
 }
 
 
