@@ -28,7 +28,7 @@ blingCheckBox.onclick = () => {
         userInput.style.color = 'green';
         userInput.style.textDecoration = 'underline';
         userInput.style.textAlign = 'right';
-        document.body.style.backgroundImage = "url('https://courses.cs.washington.edu/courses/cse190m/CurrentQtr/labs/6/hundred-dollar-bill.jpg')";
+    
     } else {
         userInput.style.fontWeight = 'normal';
         userInput.style.color = 'initial';
