@@ -5,28 +5,23 @@
 	CSE 190M, Summer 2012
 	This file is a tip calculator page using JavaScript.
 	-->
-<script>
-	function calcTip() {
-	// Get input values
-	let subtotal = parseFloat(document.getElementById("subtotal").value);
-	let tipPercentage = parseFloat(document.getElementById("tip").value);
+	<script>
+		function calcTip() {
+			var subtotal = parseFloat(document.getElementById("subtotal").value);
+			var tipPercentage = parseFloat(document.getElementById("tip").value);
 
-	// Check if inputs are valid
-	if (isNaN(subtotal) || isNaN(tipPercentage)) {
-		alert("Please enter valid numbers!");
-		return;
+		if (isNaN(subtotal) || isNaN(tipPercentage)) {
+			alert("Please enter valid numbers for both subtotal and tip percentage.");
+			return;
+		}
+
+		var tipAmount = subtotal * (tipPercentage / 100);
+		var total = subtotal + tipAmount;
+
+		document.getElementById("total").innerHTML = "$" + total.toFixed(2);
 	}
-
-	// Calculate tip and total
-	let tipAmount = subtotal * (tipPercentage / 100);
-	let totalAmount = subtotal + tipAmount;
-
-	// Update the total in the page
-	document.getElementById("total").innerText = "$" + totalAmount.toFixed(2);
-	}
-
-
-</script>
+	</script>
+	
 	<head>
 		<title>Tip Calculator</title>
 		<link href="tip.css" type="text/css" rel="stylesheet" />

@@ -5,29 +5,29 @@ document.addEventListener("DOMContentLoaded", () => {
     const taskList = document.getElementById("taskList");
 
     // Load saved tasks from localStorage
-    loadTasks();
+    loadTasks(); //which loads previously saved tasks from the browser's localStorage.
 
-    function addTask() {
+    addTaskButton.addEventListener("click", () => {
         const taskText = taskInput.value.trim();
         if (taskText) {
-            if (taskList.value === '') {
-                taskList.value = taskText;
-            } else {
-                taskList.value += '\n' + taskText;
-            }
-            saveTask(taskText);
+            addTask(taskText);
             taskInput.value = "";
         }
-    }
-
-    addTaskButton.addEventListener("click", addTask);
+    });
 
     clearTasksButton.addEventListener("click", () => {
         taskList.value = '';
         localStorage.removeItem("tasks");
     });
 
-    
+    function addTask(taskText) {
+        if (taskList.value === '') {
+            taskList.value = taskText;
+        } else {
+            taskList.value += '\n' + taskText;
+        }
+        saveTask(taskText);
+    }
 
     function loadTasks() {
         const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
