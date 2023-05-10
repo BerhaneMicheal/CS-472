@@ -38,10 +38,10 @@ document.getElementById('createtaskButton').addEventListener('click', () => {
 
 document.getElementById('depositButton').addEventListener('click', () => {
     const accountName = document.getElementById('name').value;
-    const deposit = document.getElementById('deposit').value;
+    const ddeposit = document.getElementById('deposit').value;
     const account = BankAccount.accountInfoList.find(acc => acc.accountName === accountName);
     if (account) {
-        account.depositAmount(parseFloat(deposit));
+        account.depositAmount(parseFloat(ddeposit));
         updateAccountList();
     } else {
         alert('Account not found!');
