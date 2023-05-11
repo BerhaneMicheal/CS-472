@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+function alertMe() {
+  alert("Hello World!");
+}
+
+$(document).ready(function(){
+  $("p").click(alertMe);
+  $("button").click(function(){
+    $("p").unbind("click", alertMe);
+    //$("p").unbind();
+  });
+});
+</script>
+</head>
+<body>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<p>Click any p element to trigger an alert box.</p>
+
+<button>Remove the alert box function from the click event for the p elements</button>
+
+</body>
+</html>

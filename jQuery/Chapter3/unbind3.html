@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  var x = 0;
+  $("p").click(function(){
+    $("p").animate({fontSize: "+=5px"});
+    x++;
+    if (x >= 2) {
+      $(this).unbind();
+    }
+  });
+});
+</script>
+</head>
+<body>
+
+<p style="font-size:20px;">Click this p element to increase its size. The size can only be increased 2 times.</p>
+
+</body>
+</html>
