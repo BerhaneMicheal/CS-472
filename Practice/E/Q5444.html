@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+    <ul>
+        <li> Shirt <button>Delete</button> </li>
+        <li> Tie <button>Delete</button> </li>
+        <li> Jacket <button>Delete</button> </li>
+        <li> Hat <button>Delete</button> </li>
+    </ul>
+    <script>
+        (function() {
+            function DeleteItem(event) {
+                $(event.target).parent().remove();
+            }
+        $(document).ready(function() {
+             $("button").click (DeleteItem);
+        }); 
+    })();
+    </script>
+</body>
+</html>
