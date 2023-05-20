@@ -15,7 +15,7 @@ app.use(session({
 }));
 
 const sequences = [
-    { seq: [1, 3, 9, 27, 81], next: 243, explanation: 'powers of 3' },
+    { seq: [3, 1, 4, 1, 5], next: 9, explanation: 'pi' },
     { seq: [1, 1, 2, 3, 5], next: 8, explanation: 'fibonacci' },
     { seq: [1, 4, 9, 16, 25], next: 36, explanation: 'squares' },
     { seq: [2, 3, 5, 7, 11], next: 13, explanation: 'primes' },
