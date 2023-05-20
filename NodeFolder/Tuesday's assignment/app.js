@@ -3,11 +3,12 @@ const app = express();
 const port = 8080;
 
 app.use(express.static('public'));
-app.use(express.urlencoded({ extended: true }));
+//app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/public/index.html');
+    console.log('here');
+    //res.sendFile('index.html');
 });
 
 app.post('/calculate', (req, res) => {
@@ -16,6 +17,7 @@ app.post('/calculate', (req, res) => {
     const operation = req.body.operation;
     let result;
 
+    console.log(req.body)
     switch(operation) {
         case 'add':
             result = num1 + num2;
