@@ -36,7 +36,8 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {
-    const answer = parseInt(req.body.answer, 10);
+    console.log(req)
+    const answer = parseInt(req.body.answer);
     if (answer === sequences[req.session.quizIndex].next) {
         req.session.score += 1;
     }
